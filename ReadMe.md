@@ -1,6 +1,6 @@
 #### Timer Board
 
-This project contains hardware design files of a modular digital timer supporting wifi / gsm communication.
+This project contains design files and software of a modular digital timer supporting wifi / gsm communication.
 
 External component libraries located [here](https://github.com/the-this-pointer/kicad-my-libraries)
 

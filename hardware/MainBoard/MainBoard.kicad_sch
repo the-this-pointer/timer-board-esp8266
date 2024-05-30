@@ -144,21 +144,21 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_01x04"
+		(symbol "Connector_Generic:Conn_01x05"
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 5.08 0)
+				(at 0 7.62 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Conn_01x04"
+			(property "Value" "Conn_01x05"
 				(at 0 -7.62 0)
 				(effects
 					(font
@@ -184,7 +184,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -211,7 +211,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "Conn_01x04_1_1"
+			(symbol "Conn_01x05_1_1"
 				(rectangle
 					(start -1.27 -4.953)
 					(end 0 -5.207)
@@ -257,7 +257,18 @@
 					)
 				)
 				(rectangle
-					(start -1.27 3.81)
+					(start -1.27 5.207)
+					(end 0 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 6.35)
 					(end 1.27 -6.35)
 					(stroke
 						(width 0.254)
@@ -268,7 +279,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 2.54 0)
+					(at -5.08 5.08 0)
 					(length 3.81)
 					(name "Pin_1"
 						(effects
@@ -286,7 +297,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 0 0)
+					(at -5.08 2.54 0)
 					(length 3.81)
 					(name "Pin_2"
 						(effects
@@ -304,7 +315,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -2.54 0)
+					(at -5.08 0 0)
 					(length 3.81)
 					(name "Pin_3"
 						(effects
@@ -322,7 +333,7 @@
 					)
 				)
 				(pin passive line
-					(at -5.08 -5.08 0)
+					(at -5.08 -2.54 0)
 					(length 3.81)
 					(name "Pin_4"
 						(effects
@@ -332,6 +343,24 @@
 						)
 					)
 					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2727,6 +2756,16 @@
 	)
 	(wire
 		(pts
+			(xy 254 69.85) (xy 250.19 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "073c3b0d-c7f9-4de0-b0ff-6ff0eeaf8767")
+	)
+	(wire
+		(pts
 			(xy 48.26 132.08) (xy 48.26 134.62)
 		)
 		(stroke
@@ -2967,16 +3006,6 @@
 	)
 	(wire
 		(pts
-			(xy 250.19 72.39) (xy 250.19 71.12)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "40072a20-2a28-4d63-8249-768b791bb316")
-	)
-	(wire
-		(pts
 			(xy 264.16 44.45) (xy 264.16 46.99)
 		)
 		(stroke
@@ -3154,6 +3183,16 @@
 			(type default)
 		)
 		(uuid "6b9dd692-1f10-4984-acc5-1dbb876a4642")
+	)
+	(wire
+		(pts
+			(xy 250.19 69.85) (xy 250.19 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bef31c9-abfd-4fc1-842b-5dc2ce26b939")
 	)
 	(wire
 		(pts
@@ -3828,6 +3867,17 @@
 			(justify right bottom)
 		)
 		(uuid "8d3ffbc0-b5a2-49de-8c3d-6f5a6c883051")
+	)
+	(label "IO16"
+		(at 250.19 72.39 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "945f93f5-8020-4b0d-becf-0b9cdee8b301")
 	)
 	(label "IO15"
 		(at 80.01 143.51 180)
@@ -5770,6 +5820,71 @@
 			(project "hot-plate"
 				(path "/afd3dbad-e7a8-4e4c-b77c-4065a69aefa2"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 250.19 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6679112e-7718-4411-8cf2-7807f8931438")
+		(property "Reference" "#PWR05"
+			(at 250.19 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 250.571 62.9158 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 250.19 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 250.19 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 250.19 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c925af1a-f063-4a6e-8ace-e44bbbbc96b9")
+		)
+		(instances
+			(project "MainBoard"
+				(path "/aa3dbaea-63c2-4583-a05b-c2086b245f5c"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -9301,7 +9416,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
+		(lib_id "Connector_Generic:Conn_01x05")
 		(at 259.08 74.93 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -9325,7 +9440,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_XH_B4B-XH-A_1x04_P2.50mm_Vertical"
+		(property "Footprint" "Connector_JST:JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical"
 			(at 259.08 74.93 0)
 			(effects
 				(font
@@ -9343,7 +9458,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
 			(at 259.08 74.93 0)
 			(effects
 				(font
@@ -9363,6 +9478,9 @@
 		)
 		(pin "4"
 			(uuid "1f5fa67d-3003-41be-baf0-700c65b0bde0")
+		)
+		(pin "5"
+			(uuid "f847e28a-7baa-4bec-bfd2-7e6b253749ca")
 		)
 		(instances
 			(project "MainBoard"
@@ -9439,77 +9557,6 @@
 			(project "hot-plate"
 				(path "/afd3dbad-e7a8-4e4c-b77c-4065a69aefa2"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 250.19 71.12 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f41842f7-6bc0-4fa6-880b-d9cc0e56dc34")
-		(property "Reference" "#PWR015"
-			(at 250.19 74.93 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 250.571 66.7258 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 250.19 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 250.19 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 250.19 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9c177d74-255c-48bd-a89f-148715efecd7")
-		)
-		(instances
-			(project "MainBoard"
-				(path "/aa3dbaea-63c2-4583-a05b-c2086b245f5c"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-			(project "hot-plate"
-				(path "/afd3dbad-e7a8-4e4c-b77c-4065a69aefa2"
-					(reference "#PWR0102")
 					(unit 1)
 				)
 			)

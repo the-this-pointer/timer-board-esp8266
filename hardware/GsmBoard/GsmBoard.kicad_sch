@@ -2528,6 +2528,26 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 102.87) (xy 58.42 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2cb8bbf2-9b74-4cdc-ab6e-1a8ed0930964")
+	)
+	(wire
+		(pts
+			(xy 58.42 100.33) (xy 58.42 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ff4d9be-5db8-4ee0-ad94-1b883e866f00")
+	)
+	(wire
+		(pts
 			(xy 58.42 81.28) (xy 54.61 81.28)
 		)
 		(stroke
@@ -2695,6 +2715,16 @@
 			(type default)
 		)
 		(uuid "68ec5339-284c-4ae7-85bf-3777aeb7767a")
+	)
+	(wire
+		(pts
+			(xy 57.15 100.33) (xy 58.42 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70a2bbef-66b2-4e8b-a2b4-b59f1474045a")
 	)
 	(wire
 		(pts
@@ -2905,6 +2935,16 @@
 			(type default)
 		)
 		(uuid "a68f243a-7f27-4f6e-8fcf-86be2ad695e3")
+	)
+	(wire
+		(pts
+			(xy 58.42 102.87) (xy 58.42 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab17b22a-789f-4310-8ad5-c54dadd038f0")
 	)
 	(wire
 		(pts
@@ -3381,6 +3421,72 @@
 			(project "GsmBoard"
 				(path "/aa3dbaea-63c2-4583-a05b-c2086b245f5c"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 58.42 104.14 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "00466360-5bd7-486d-84b3-cc5ba2bfdcf5")
+		(property "Reference" "#PWR021"
+			(at 58.42 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 58.42 109.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 58.42 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a16b0d1d-d96c-4749-9981-2aabdd3fda64")
+		)
+		(instances
+			(project "GsmBoard"
+				(path "/aa3dbaea-63c2-4583-a05b-c2086b245f5c"
+					(reference "#PWR021")
 					(unit 1)
 				)
 			)
@@ -4178,10 +4284,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "9b04add2-72cf-4466-9efd-3165b9884317")
+			(uuid "9b04add2-72cf-4466-9efd-3165b9884318")
 		)
 		(pin "2"
-			(uuid "4b5e729e-c53d-4037-8205-0d92c3584a4b")
+			(uuid "4b5e729e-c53d-4037-8205-0d92c3584a4c")
 		)
 		(instances
 			(project "GsmBoard"
@@ -4451,6 +4557,139 @@
 			(project "GsmBoard"
 				(path "/aa3dbaea-63c2-4583-a05b-c2086b245f5c"
 					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 52.07 102.87 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3eff8b5d-d5ca-44ea-936a-bf6da22c6a94")
+		(property "Reference" "J3"
+			(at 54.1528 94.615 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "MainBoard Supply"
+			(at 47.244 97.028 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_JST:JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical"
+			(at 52.07 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 52.07 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a075a30-f6d9-4ff0-a859-a61571565317")
+		)
+		(pin "2"
+			(uuid "42438787-9161-4552-b9cf-9f1710a54721")
+		)
+		(instances
+			(project "GsmBoard"
+				(path "/aa3dbaea-63c2-4583-a05b-c2086b245f5c"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+4V")
+		(at 58.42 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "42d5d0d5-b47d-4ac8-b2e7-b46a16fa2503")
+		(property "Reference" "#PWR022"
+			(at 58.42 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+4V"
+			(at 58.42 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+4V\""
+			(at 58.42 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f290ad4d-0a2b-4ea0-b1c8-3509dc1bfb54")
+		)
+		(instances
+			(project "GsmBoard"
+				(path "/aa3dbaea-63c2-4583-a05b-c2086b245f5c"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -4791,10 +5030,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "9b04add2-72cf-4466-9efd-3165b9884317")
+			(uuid "9b04add2-72cf-4466-9efd-3165b9884319")
 		)
 		(pin "2"
-			(uuid "4b5e729e-c53d-4037-8205-0d92c3584a4b")
+			(uuid "4b5e729e-c53d-4037-8205-0d92c3584a4d")
 		)
 		(instances
 			(project "GsmBoard"
